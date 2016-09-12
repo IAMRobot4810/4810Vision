@@ -1,5 +1,5 @@
-$4810Vision
-===========
+4810Vision
+==========
 
 4810Vision is an implementation of OpenCV in order to detect targets for the 2016 FRC Competition Game, "Stronghold." The code is written in Python 3+
 
@@ -22,6 +22,7 @@ Usage is fairly simple. Simply clone the repository into your directory and run 
 .. highlight:: console
 
 ::
+
    python3 vision.py
 
 on Linux or
@@ -29,6 +30,7 @@ on Linux or
 .. highlight:: powershell
 
 ::
+
    python vision.py
 
 on Windows
@@ -46,21 +48,23 @@ If it's Windows, follow these steps (make sure to have admin privileges, when ne
 .. highlight:: powershell
 
 ::
+
    pip
 
-
-
 in your command shell. If that is not the case, then download pip from the official website. Download the Python file get-pip.py and then simply run it with Python.
+
 3) We will now grab the dependencies that OpenCV needs to work on pip, namely numpy and matplotlib (the latter is moreso optional but very helpful). Simply run
    
 .. highlight:: powershell
 
 ::
+
    pip install numpy
    pip install matplotlib
 
 and pip should take care of the rest.
-4) Now for the most exciting part: actually getting OpenCV. For Windows, we are getting a precompiled binary for opencv3. To do so head over to this website
+
+4) Now for the most exciting part- actually getting OpenCV. For Windows, we are getting a precompiled binary for opencv3. To do so head over to this website
    http://www.lfd.uci.edu/~gohike/pythonlibs/
 Find opencv on the list of Python Extension Packages (there's a lot) and click on the link. This should take you to a bynch of .whl files to download. Make sure you grab the .whl file that
    - Corresponds to your version of Python 3 (3.4 or 3.5 are both supported)
@@ -69,15 +73,18 @@ Download and then run
 .. highlight:: powershell
 
 ::
+
    pip install opencv_python-3.1.0-cp3x-cp3xm-architecturehere.whl
 
    
 This should install opencv for use in Python.
+
 5) Now we sit back and test to see if it works. To do so run Python in command line and invoke the following commands
    
 .. highlight:: python
 
 ::
+
    import cv2
    cv2.__version__
 
