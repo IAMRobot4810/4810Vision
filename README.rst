@@ -7,7 +7,7 @@ $4810Vision
 Features
 --------
 
-- A direct implementation of the FRC 2016 Vision Tutorial. Read more `here` _.
+- A direct implementation of the FRC 2016 Vision Tutorial. Read more here_.
 - Relative accuracy in detecting the high goals in "Stronghold"
 - A folder of sample pictures to showcase said accuracy
 
@@ -21,7 +21,6 @@ Usage is fairly simple. Simply clone the repository into your directory and run 
 
 .. highlight:: console
 	       
-::
    python3 vision.py
 
 .. highlight:: none
@@ -38,7 +37,7 @@ If it's Windows, follow these steps (make sure to have admin privileges, when ne
 
 .. highlight:: powershell
 
-::
+
    pip
 
 .. highlight:: none
@@ -47,7 +46,6 @@ in your command shell. If that is not the case, then download pip from the offic
 3) We will now grab the dependencies that OpenCV needs to work on pip, namely numpy and matplotlib (the latter is moreso optional but very helpful). Simply run
 .. highlight:: powershell
 
-::
    pip install numpy
    pip install matplotlib
 
@@ -56,13 +54,13 @@ in your command shell. If that is not the case, then download pip from the offic
 and pip should take care of the rest.
 4) Now for the most exciting part: actually getting OpenCV. For Windows, we are getting a precompiled binary for opencv3. To do so head over to this website
    http://www.lfd.uci.edu/~gohike/pythonlibs/
-   Find opencv on the list of Python Extension Packages (there's a lot) and click on the link. This should take you to a bynch of .whl files to download. Make sure you grab the .whl file that
+Find opencv on the list of Python Extension Packages (there's a lot) and click on the link. This should take you to a bynch of .whl files to download. Make sure you grab the .whl file that
    - Corresponds to your version of Python 3 (3.4 or 3.5 are both supported)
    - Matches your system architecture (32 or 64 bit)
 Download and then run
 .. highlight:: powershell
 
-::
+
    pip install opencv_python-3.1.0-cp3x-cp3xm-architecturehere.whl
 
 .. highlight:: none
@@ -70,7 +68,6 @@ This should install opencv for use in Python
 5) Now we sit back and test to see if it works. To do so run Python in command line and invoke the following commands
 .. highlight:: python
 
-::
    import cv2
    cv2.__version__
 
