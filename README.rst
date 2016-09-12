@@ -20,10 +20,18 @@ Usage
 Usage is fairly simple. Simply clone the repository into your directory and run the Python code that is required. That is as simple as
 
 .. highlight:: console
-	       
+
+::
    python3 vision.py
 
-.. highlight:: none
+on Linux or
+
+.. highlight:: powershell
+
+::
+   python vision.py
+
+on Windows
 
 Installation
 ------------
@@ -37,19 +45,19 @@ If it's Windows, follow these steps (make sure to have admin privileges, when ne
 
 .. highlight:: powershell
 
-
+::
    pip
 
-.. highlight:: none
+
 
 in your command shell. If that is not the case, then download pip from the official website. Download the Python file get-pip.py and then simply run it with Python.
 3) We will now grab the dependencies that OpenCV needs to work on pip, namely numpy and matplotlib (the latter is moreso optional but very helpful). Simply run
+   
 .. highlight:: powershell
 
+::
    pip install numpy
    pip install matplotlib
-
-.. highlight:: none
 
 and pip should take care of the rest.
 4) Now for the most exciting part: actually getting OpenCV. For Windows, we are getting a precompiled binary for opencv3. To do so head over to this website
@@ -60,17 +68,20 @@ Find opencv on the list of Python Extension Packages (there's a lot) and click o
 Download and then run
 .. highlight:: powershell
 
-
+::
    pip install opencv_python-3.1.0-cp3x-cp3xm-architecturehere.whl
 
-.. highlight:: none
-This should install opencv for use in Python
+   
+This should install opencv for use in Python.
 5) Now we sit back and test to see if it works. To do so run Python in command line and invoke the following commands
+   
 .. highlight:: python
 
+::
    import cv2
    cv2.__version__
 
 .. highlight:: none
+	       
 If you get no errors, then you are all set!
 Happy editing.
